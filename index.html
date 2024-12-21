@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>ViaCep</title>
+</head>
+<body>
+    <header>
+        <div class="div-logo">
+            <img src="img/busca-cep.png" alt="">
+        </div>
+    </header>
+    <section>
+        <div class="div-consulta">
+            <div class="div-inputs">
+                <label for="">Insira o CEP</label>
+                <input type="text" id="cep" oninput="limiteCaracter(this, 9)">
+
+                <button onclick="buscarCEP()">Buscar</button>
+            </div>
+
+            <div id="resultado"></div>
+        </div>
+    </section>
+
+
+<script src="script.js"></script>
+</body>
+</html>
